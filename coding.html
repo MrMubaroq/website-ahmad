@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coding.css">
+</head>
+<body>
+ <main class="container">
+    <!-- Header start -->
+    <header>
+        <nav class="nav container">
+        <h2 class="nav-logo"><a href="#">CodingNepal</a></h2>
+        
+        <ul class="menu_items">
+            <img src="silang.jpg" alt="timesicpon" id="menu_toggle" />
+          <li><a href="#" class="nav_link">Home</a></li>
+          <li><a href="#" class="nav_link">About</a></li>
+          <li><a href="#" class="nav_link">Service</a></li>
+          <li><a href="#" class="nav_link">project</a></li>
+          <li><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+        <img src="menu.jpg" alt="timesicpon" id="menu_toggle" />
+    </nav>
+    </header>
+    <!-- Header and -->
+
+
+    <!-- Hero start -->
+<section class="hero">
+    <div class="row">
+        <div class="column">
+            <h2>Top free tool and extension to <br>radiply grow busines</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cum voluptates ut dolorem exercitationem dolore, facilis velit, veniam unde quibusdam rerum commodi soluta ipsa ab tempora minus sapiente libero. Earum tenetur natus tempore ullam officia.  </p>
+                <div class="buttons">
+                    <button class="btn">read More</button>
+                    <button class="btn"> Contact Us</button>
+                </div>
+             </div>
+             <div class="column">
+                <img src="luffi1.jpg" alt="heroImg" class="hero_img" />
+             </div>
+    </div>
+</section>
+    <!-- Hero end -->
+ </main>
+
+
+
+
+ <script>
+    const header = document.querySelector("header")
+    const menuToggler = document.querySelectorAll("#menu_toggle")
+
+    menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    })
+ </script>
+</body>
+</html>
